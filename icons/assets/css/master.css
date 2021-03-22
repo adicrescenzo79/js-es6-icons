@@ -1,9 +1,39 @@
-main{
+body{
+  background-color: #000;
+}
+
+
+header .container{
+  background-color: #fff;
+  color:  #29B1DD;
+  font-size: 30px;
+}
+
+.jumbo{
+  padding: 0;
+}
+
+main .container{
   background-color: #eee;
+}
+
+.filter{
+  background-color: #29B1DD;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+.filter select{
+  outline: none;
 }
 
 .icons{
   padding-top: 20px;
+  text-transform: uppercase;
 
   display: flex;
   justify-content: space-between;
@@ -23,6 +53,7 @@ i{
   background-color: #fff;
   margin-bottom: 100px;
   border-radius: 10px;
+  box-shadow: 2px 2px grey;
 
 
   display: flex;

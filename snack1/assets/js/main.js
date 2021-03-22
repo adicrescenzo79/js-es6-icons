@@ -12,7 +12,7 @@ $(document).ready(function(){
   }
 
   nome = 'Mountain-bike'
-  peso = 4
+  peso = 23
 
   bike = {
     nome,
@@ -22,7 +22,7 @@ $(document).ready(function(){
   bikes.push(bike);
 
   nome = 'Graziella'
-  peso = 2
+  peso = 12
 
   bike = {
     nome,
@@ -32,7 +32,7 @@ $(document).ready(function(){
   bikes.push(bike);
 
   nome = 'City-bike'
-  peso = 3
+  peso = 15
 
   bike = {
     nome,
@@ -45,18 +45,14 @@ $(document).ready(function(){
   console.log(bikes);
 
   let pesoMinore = bikes[0].peso;
-  // let bici = bikes[0].nome;
+  let bici = bikes[0].nome;
   bikes.forEach((item) => {
     if (item.peso < pesoMinore) {
       pesoMinore = item.peso;
-      // bici = item.nome
+      bici = item.nome
     }
   });
 
-  let biciLeggera = bikes.filter((item) => item.peso == pesoMinore);
-
-  // console.log(`La bicicletta più leggera è la ${bici} che pesa ${pesoMinore} Kg`);
-
-  console.log(`La bicicletta più leggera è la ${biciLeggera[0].nome} che pesa ${pesoMinore} Kg`);
+  console.log(`La bicicletta più leggera è la ${bici} che pesa ${pesoMinore} Kg`);
 
 });
