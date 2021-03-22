@@ -1,0 +1,44 @@
+main{
+  background-color: #eee;
+}
+
+.icons{
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+i{
+  font-size: 40px;
+}
+
+.icons div{
+  width: calc((100% - 160px) / 5);
+  height: 100px;
+  background-color: #fff;
+  margin-bottom: 100px;
+  border-radius: 10px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue{
+  color: #0000FF;
+}
+
+.yellow{
+  color: #FFA500;
+}
+
+.purple{
+  color: #800080;
+}
